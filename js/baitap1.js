@@ -10,29 +10,20 @@
  * 
  * Khối 2: Các bước xử lý code
  * B1: tạo biến soNgay, ngayLuong, luongnv
- * B2: gán giá trị cho biến lấy từ id html tương ứng
+ * B2: gán giá trị cho biến
  * B3: Lập công thức tính toán
  * luongnv = soNgay * ngayLuong;
- * B4: thông báo kết quả ở id tương ứng của html
+ * B4: thông báo kết quả ở consolog.log
  * 
  * Khối 3: Kết quả (Output)
  * luongnv
  * 
  */
 
-// var soNgay = 0;
-// var ngayLuong = 100000;
-// var luongnv = 0;
+var soNgay = 5;
+var ngayLuong = 100000;
+var luongnv = 0;
 
-// luongnv = soNgay * ngayLuong;
+luongnv = soNgay * ngayLuong;
 
-// console.log("\nBài 1...\nLương nhân viên: " + luongnv);
-
-function tinhNgayLuong(){
-    var soNgay = document.getElementById("ngayLuong").value;
-    var ngayLuong = 100000;
-    luongnv = soNgay * ngayLuong;
-    document.getElementById("txtResult1").innerHTML = luongnv;
-}
-   
-document.getElementById("btnTinh1").onclick = tinhNgayLuong;
+console.log("\nBài 1... Số ngày tính lương : 5\nLương nhân viên: " + luongnv);

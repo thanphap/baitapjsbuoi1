@@ -11,37 +11,25 @@
  * 
  * Khối 2: Các bước xử lý code
  * B1: tạo biến number1, number2, number3, number4, number5, trungbinh
- * B2: gán giá trị cho biến lấy từ id html tương ứng
+ * B2: gán giá trị cho biến
  * B3: Lập công thức tính toán
  * trungbinh = (number1 + number2 + number3 + number4 + number5) / 5;
- * B4: thông báo kết quả ở id tương ứng của html
+ * B4: thông báo kết quả ở consolog.log
  * 
  * Khối 3: Kết quả (Output)
  * trungbinh
  * 
  */
 
-// var number1 = 10;
-// var number2 = 20;
-// var number3 = 30;
-// var number4 = 40;
-// var number5 = 50;
+var number1 = 10;
+var number2 = 20;
+var number3 = 30;
+var number4 = 40;
+var number5 = 50;
 
-// var trungbinh = 0;
+var trungbinh = 0;
 
-// trungbinh = (number1 + number2 + number3 + number4 + number5) / 5;
+trungbinh = (number1 + number2 + number3 + number4 + number5) / 5;
 
-// console.log("\nBài 2...\nTrung bình 5 số: " + trungbinh);
+console.log("\nBài 2... Giá trị 5 số: 10; 20; 30; 40; 50\nTrung bình 5 số: " + trungbinh);
 
-function tinhTrungBinh() {
-    var number1 = document.getElementById("number1").value;
-    var number2 = document.getElementById("number2").value;
-    var number3 = document.getElementById("number3").value;
-    var number4 = document.getElementById("number4").value;
-    var number5 = document.getElementById("number5").value;
-    var trungbinh = 0;
-    trungbinh = (Number(number1) + Number(number2) + Number(number3) + Number(number4) + Number(number5)) / 5;
-    document.getElementById("txtResult2").innerHTML = trungbinh;
-}
-
-document.getElementById("btnTinh2").onclick = tinhTrungBinh;

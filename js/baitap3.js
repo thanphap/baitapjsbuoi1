@@ -11,29 +11,19 @@
  * 
  * Khối 2: Các bước xử lý code
  * B1: tạo biến giaUSD, soUSD, quydoiVND
- * B2: gán giá trị cho biến lấy từ id html tương ứng
+ * B2: gán giá trị cho biến
  * B3: Lập công thức tính toán
  * quydoiVND = giaUSD * soUSD;
- * B4: thông báo kết quả ở id tương ứng của html
+ * B4: thông báo kết quả ở consolog.log
  * 
  * Khối 3: Kết quả (Output)
  * quydoiVND
  */
 
-// var giaUSD = 23500;
-// var soUSD = 0;
-// var quydoiVND = 0;
+var giaUSD = 23500;
+var soUSD = 2;
+var quydoiVND = 0;
 
-// quydoiVND = giaUSD * soUSD;
+quydoiVND = giaUSD * soUSD;
 
-// console.log("\nBài 3...\nQuy đổi USD sang VND: " + quydoiVND);
-
-function tinhQuyDoi(){
-    var soUSD = document.getElementById("soUSD").value;
-    var giaUSD = 23500;
-    var quydoiVND = 0;
-    quydoiVND = giaUSD * soUSD;
-    document.getElementById("txtResult3").innerHTML = quydoiVND;
-}
-   
-document.getElementById("btnTinh3").onclick = tinhQuyDoi;
+console.log("\nBài 3... Số USD: 2\nQuy đổi USD sang VND: " + quydoiVND);
